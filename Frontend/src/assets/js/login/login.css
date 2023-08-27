@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* LINK EN HOVER  */
+#topnav a.signin, #topnav a.signin:hover { display: inline-block; }
+a.signin { position: relative; z-index: 1000; width: auto; }
+a.signin.menu-open span { text-align: left; }
+#signin_menu { width: 250px; border-radius: 4px 0 4px 4px; display: none; position: absolute;  z-index: 990;  padding: 20px; top: 40px; margin-top: 0px; margin-right: 0px; *margin-right: -1px; border: 1px solid rgba(182,204,234,.3); right: 0px; background-color: #FFFFFF; text-align: center; box-shadow: 0 5px 10px rgba(0,0,0,.1);  }
+#signin_menu span { display: block; text-align: center;  }
+#signin_menu input[type=email], #signin_menu input[type=password] { text-align: center; margin-bottom: 5px; }
+#signin_menu #signin a.options { display: block; text-align: ; padding: 0; margin: 0; line-height: 20px; }
+.----------------{}
+.menu-sesion h3 { border-bottom: 1px solid rgba(182,204,234,.3); margin: 0px 0px 10px; padding: 0px 0px 10px; display: block; font-weight: 400; font-size: 16px; line-height: 18px;  }
+.menu-sesion h3 b { font-size: 18px; color: #55ab25; line-height: 18px; }
+.menu-sesion > i {}
+.menu-sesion > a.btn { display: block; margin-bottom: 10px;  }
+.menu-sesion > a.btn:hover { text-decoration: none; }
+.----------------{}
+/* LINK EN POSICION  */
+#login { position: relative; z-index: 999; float: right; padding: 0px; text-align: left; }

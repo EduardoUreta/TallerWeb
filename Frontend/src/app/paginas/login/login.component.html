@@ -1,0 +1,121 @@
+    <div class="body bg-login">
+        <!-- CONTENIDO CENTRAL -->
+        <section class="container">
+            <!-- CONTAINER -->
+            <div class="row">
+                <!-- ROW -->
+
+                <section class="login">
+                    <!-- LOGIN -->
+                    <div class="login-mod">
+                        <!-- MOD -->
+                        <div class="login-mod-logo">
+                            <img src="assets/images/logo-vecindad.png" alt="Vecindad" title="Pedidos la Vecindad | Login | Sistema de Administracion">
+                        </div>
+                        <div class="login-mod-inputs">
+                            <form>
+                                <!-- LOGIN -->
+
+                                <div class="alert alert-danger" role="alert" style="display: none;">Su nombre de usuario o contraseña no son correctos.</div>
+
+                                <div class="input-group">
+                                    <input type="text" class="form-control input-lg" id="rut" name="rut" placeholder="RUT">
+                                    <div class="input-group-addon"><i class="fa fa-fw fa-briefcase"></i></div>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control input-lg" id="rut" name="rut" placeholder="Usuario">
+                                    <div class="input-group-addon"><i class="fa fa-fw fa-user"></i></div>
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" class="form-control input-lg" id="rut" name="rut" placeholder="Contraseña">
+                                    <div class="input-group-addon"><i class="fa fa-fw fa-unlock-alt"></i></div>
+                                </div>
+
+                                <a routerLink="principal" type="button" class="btn btn-success btn-lg btn-block">Entrar</a>
+                                <!--  END LOGIN -->
+                            </form>
+                        </div>
+                        <a href="#" target="_self">¿Olvidado su contraseña?</a>
+
+                        <!-- END MOD -->
+                    </div>
+                    <!-- END LOGIN -->
+                </section>
+
+                <!-- END ROW -->
+            </div>
+            <!-- END CONTAINER -->
+        </section>
+        <!-- END CONTENIDO CENTRAL -->
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="body bg-pdd-20 bg-green">
+        <!-- CONTENIDO FOOTER -->
+        <footer id="footer">
+            <!-- FOOTER -->
+            <section class="container">
+                <!-- CONTENIDO -->
+                <div class="row">
+                    <!-- ROW -->
+
+                    <section class="footer-info">
+                        <!-- FOOTER INFO -->
+                        <!-- END FOOTER INFO -->
+                    </section>
+
+                    <!-- END ROW -->
+                </div>
+                <!-- END CONTENIDO -->
+            </section>
+            <!-- END FOOTER -->
+        </footer>
+        <!-- END CONTENIDO -->
+    </div>
+
+    <p id="back-top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></p>
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <!-- END -->
+    
+    <!-- TOOLTIP -->
+    <script type="text/javascript">
+       $(function () {
+         $('[data-toggle="tooltip"]').tooltip()
+       })
+    </script>
+    <!-- END -->
+
+    <!-- MENU ADAPTABLE -->
+    <script type="text/javascript" src="js/menu-rwd/jquery.meanmenu.js"></script>
+    <script type="text/javascript">
+// jQuery(document).ready(function() {
+    $(document).ready(function() {
+  jQuery('#menuppal').meanmenu();
+  meanScreenWidth: "768";
+
+  $("#back-top").hide();
+  $(function() {
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 100) {
+        $('#back-top').fadeIn();
+      } else {
+        $('#back-top').fadeOut();
+      }
+    });
+
+    $('#back-top a').click(function() {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 300);
+      return false;
+    });
+  });
+});
+
+    </script>
+    <!-- END BODY HTML -->
+

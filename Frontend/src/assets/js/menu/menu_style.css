@@ -1,0 +1,30 @@
+#menuppal ul,#menuppal li,#menuppal span,#menuppal a { margin: 0; padding: 0; position: relative; z-index: 500; }
+#menuppal { width: 100%; float: left; }
+#menuppal a { display: block; text-decoration: none; }
+#menuppal ul { list-style: none; }
+#menuppal > ul > li { display: inline-block; float: left; margin: 0; }
+#menuppal > ul > li:hover { background-color: #FFFFFF; color: #43BA67; }
+
+#menuppal .has-sub ul {  position: absolute; width: 250px; top: 100%; left: 0; display: none; box-shadow: 0 5px 10px rgba(0,0,0,.3); }
+#menuppal .has-sub:hover > ul { display: block; }
+#menuppal .has-sub ul li { *margin-bottom: -1px; }
+#menuppal .has-sub ul li a { display: block; }
+#menuppal ul ul li:hover > a { color: #FFF; } /* POR SI EL COLOR DE LA TIPO DEBE SER DIFERENTE */
+#menuppal .has-sub .has-sub:hover > ul { display: block; }
+#menuppal .has-sub .has-sub ul { display: none; position: absolute; left: 100%; top: 0; }
+#menuppal.align-right .has-sub .has-sub ul,#menuppal.align-right ul ul ul { left: auto; right: 100%; }
+.-------------------- {}
+/*********** BORDER BOTTOM ************/
+#menuppal .has-sub ul li a, #menuppal .has-sub .has-sub ul li a { border-bottom: 1px solid rgba(255,255,255,.05); }
+#menuppal ul ul li.last > a,
+#menuppal ul ul li:last-child > a,
+#menuppal ul ul ul li.last > a,
+#menuppal ul ul ul li:last-child > a,
+#menuppal .has-sub ul li:last-child > a,
+#menuppal .has-sub ul li.last > a {  border-bottom: 0; }
+.-------------------- {}
+/*********** PRINCIPALES ************/
+#menuppal a { color: #ffffff; padding: 0 15px; background-color: transparent; height: 50px; line-height: 50px; font-weight: 600; text-shadow: -1px -1px 0px rgba(0,0,0,.1); }
+#menuppal ul li a > i { font-size: 130%; line-height: 80%; vertical-align: -13%; }
+#menuppal .has-sub li a > i { font-size: 110%; line-height: 80%; vertical-align: 0%; }
+#menuppal .has-sub ul li a { padding: 0px 15px; line-height: 50px; text-transform: none; font-weight: normal; color: #337ab7; }
